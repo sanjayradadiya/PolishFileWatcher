@@ -78,10 +78,11 @@ namespace PolishFileWatcher
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Write("Please Wait ");
+            Random r = new Random(1);
             for (int i = 0; i < 5; i++)
             {
-                Console.Write(". ");
-                Thread.Sleep(1000);
+                Console.Write("*");
+                Thread.Sleep(500);
             }
             ClearCurrentConsoleLine();
         }
