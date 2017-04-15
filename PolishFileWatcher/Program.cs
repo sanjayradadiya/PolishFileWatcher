@@ -139,7 +139,7 @@ namespace PolishFileWatcher
 
 
 
-                        string vFBFilename = "Facebook_" + vDate + ".csv";
+                        string vFBFilename = "Facebook_" + vDate + ".csv"; 
 
                         string vFBFilePath = item.FullDirPath + @"\" + vFBFilename;
                         if (!File.Exists(vFBFilePath)) { Utility.PrintMessage("No such file found for import..!!!", ConsoleColor.Red); continue; }
