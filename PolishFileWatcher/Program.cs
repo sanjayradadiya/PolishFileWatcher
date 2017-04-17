@@ -15,7 +15,7 @@ namespace PolishFileWatcher
         static void Main(string[] args)
         {
             //string vCurdate = DateTime.Now.ToString("yyyy-MM-dd");
-            string vCurdate = "2017-01-20";
+            string vCurdate = "2017-01-13";
             string vWatchDirName = string.Join(" ", args);
             Utility.PrintMessage("Start Watching " + vWatchDirName, ConsoleColor.Green);
 
