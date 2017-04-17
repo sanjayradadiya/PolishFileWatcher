@@ -56,9 +56,6 @@ namespace PolishFileWatcher
                     string vNumber = vSplitDirName.Skip(1).FirstOrDefault();
                     string vRecordType = string.Join("_", vSplitDirName.Skip(2));
 
-                   
-                    
-
                     if (vRecordType.ToLower().Equals("wanted_to_arrest"))
                     {
                         #region wanted_to_arrest File
@@ -132,12 +129,10 @@ namespace PolishFileWatcher
                         };
 
                             //execute bulk insert so insert statement is doesn't requred,Console.ForegroundColor its superfast technique to insert data.
-                            dh.InsertBulkData("PolishRecord", vMappings, dtnew);
-                            #endregion
+                            dh.InsertBulkData("PolishRecord", vMappings, dtnew);                            
                         }
+                        #endregion
                         #region FacebookRecord File File
-
-
 
                         string vFBFilename = "Facebook_" + vDate + ".csv"; 
 
@@ -207,8 +202,6 @@ namespace PolishFileWatcher
                             dh.InsertBulkData("FacebookRecord", vMappingsFB, dtFBnew);
                         }
                         #endregion
-
-
                     }
                     else if (vRecordType.ToLower().Equals("policeten7"))
                     {
